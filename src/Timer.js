@@ -67,10 +67,10 @@ class Timer extends Component {
     }
 
     componentWillReceiveProps(nextProps) {
-        //if (nextProps.timer !== this.props.timer) {
+        if (nextProps.timer !== this.props.timer) {
             console.log('recevie new props', nextProps);
             this.setState(this.getStartTimer(nextProps.timer));
-        //}
+        }
     }
 
     leading0 = (num) => {
